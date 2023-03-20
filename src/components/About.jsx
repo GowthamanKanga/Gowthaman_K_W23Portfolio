@@ -1,5 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import coverLetter from "../data/coverLetter.png";
+import resume from "../data/resume.png";
 
 const About = () => {
   return (
@@ -29,14 +31,14 @@ const About = () => {
         <div className="w-full md:w-3/4 lg:w-1/2 text-center mt-8">
           <div className="flex flex-col md:flex-row">
             <a
-              href="/resume.pdf"
+              href={resume}
               download
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mb-4 md:mr-4 inline-flex items-center"
             >
               Download Resume <HiArrowNarrowRight className="ml-2" />
             </a>
             <a
-              href="/cover-letter.pdf"
+              href={coverLetter}
               download
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded mb-4 md:mr-4 inline-flex items-center"
             >
